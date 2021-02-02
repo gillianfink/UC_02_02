@@ -1,0 +1,478 @@
+body {
+    margin: 0;
+    height:100vh;
+    width:100%;
+    background-color: #140b06;
+}
+
+@font-face {
+  font-family: FoundersGroteskMonoMedium;
+  src: url(fonts/founders-grotesk-mono-web-medium.woff);
+}
+
+@font-face {
+  font-family: FoundersGroteskMonoRegular;
+  src: url(fonts/founders-grotesk-mono-web-regular.woff);
+}
+
+.header2 {
+    width:100%;
+    height:85px;
+    position:fixed;
+    background: linear-gradient(#140b06, 85%, rgba(0, 0, 0, 0));
+    z-index: 2;
+}
+
+.logo2 {
+    background: url("images/utendahl2.png") no-repeat;
+    background-size: 100%;
+    width: 190px;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.selected {
+    color: #f2f1ee;
+    font-family: FoundersGroteskMonoMedium;
+    font-size: 20px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 15vh;
+    padding-bottom: 8vh;
+}
+
+.nav {
+    position: fixed;
+    font-family: FoundersGroteskMonoMedium;
+    font-size: 30px;
+    color: #f2f1ee;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #f2f1ee;
+    text-decoration: none;
+    z-index: 5;
+
+}
+
+#about {
+    top: 12px;
+    left: 20px;
+}
+
+.nav:hover {
+    color: #140b06;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #f2f1ee;
+}
+
+#work {
+    top: 12px;
+    right: 20px;
+}
+
+#team {
+    bottom: 12px;
+    left: 20px;
+}
+
+#contact {
+    bottom: 12px;
+    right: 20px;
+}
+
+.biglist {
+	list-style-type: none;
+    color: #f2f1ee;
+	position: relative;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 600;
+    letter-spacing: -.065em;
+    text-align: center;
+    font-size: 250px;
+    line-height: 250px;
+    width: 75vw;
+    padding: 0;
+    top: 10vh;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+
+.bigitem:hover {
+	font-style: italic;
+	text-decoration: line-through;
+	webkit-transition: all 300ms ease;
+	moz-transition: all 300ms ease;
+	ms-transition: all 300ms ease;
+	o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.services {
+    margin: auto;
+    width: 35vw;
+    margin-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+
+
+
+#subhead {
+    text-transform: uppercase;
+    font-family: FoundersGroteskMonoMedium;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #f2f1ee;
+    padding-bottom: 40px;
+    cursor: default;
+}
+
+
+ul.smalllist {
+    list-style-type: none;
+    color: #f2f1ee;
+    position: relative;
+    text-transform: uppercase;
+    font-family: FoundersGroteskMonoRegular;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    padding-left: 0;
+    cursor: default;
+}
+
+
+.about {
+    list-style-type: none;
+    color: #f2f1ee;
+    position: relative;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 600;
+    letter-spacing: -.065em;
+    text-align: center;
+    font-size: 250px;
+    line-height: 250px;
+    padding: 0;
+    top: 10vh;
+    margin: auto;
+    width: 80vw;
+    cursor: default;
+}
+
+
+.clientphoto {
+    width: 430px;
+    height: 430px;
+}
+
+
+#judyimg1 {
+    background: url("images/judy1.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 35vh;
+    left: 2vw;
+    background-size: 100%;
+}
+
+#judyimg2 {
+    background: url("images/judy2.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 42vh;
+    right: 2vw;
+    background-size: 100%;
+}
+
+
+#aboutfaceimg1 {
+    background: url("images/aboutface1.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 40vh;
+    left: 2vw;
+    background-size: 100%;
+}
+
+#aboutfaceimg2 {
+    background: url("images/aboutface2.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 8vh;
+    right: 2vw;
+    background-size: 100%;
+}
+
+#ladidaimg1 {
+    background: url("images/ladida1.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 40vh;
+    left: 2vw;
+    background-size: 100%;
+}
+
+#ladidaimg2 {
+    background: url("images/ladida2.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 45vh;
+    right: 15vw;
+    background-size: 100%;
+}
+
+#ladidaimg3 {
+    background: url("images/ladida3.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 10vh;
+    right: 2vw;
+    background-size: 100%;
+}
+
+#nav-icon3 span {
+  display: none;
+  position: fixed;
+  height: 2px;
+  width: 40px;
+  background: #f2f1ee;
+  opacity: 1;
+  z-index: 5;
+  right: 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 20px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 32px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 44px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 32px;
+  width: 0%;
+  right: 40px;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 32px;
+  width: 0%;
+  right: 40px;
+}
+
+.mobilemenu {
+    position: fixed;
+    background-color: #140b06;
+    display: none;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: 4;
+
+}
+
+.mobilenav {
+    position: fixed;
+    z-index: 5;
+    margin-bottom: 50px;
+    left: 50%; 
+    -webkit-transform: translate(-50%, 0); 
+    font-family: FoundersGroteskMonoMedium;
+    text-decoration: none;
+    font-size: 50px;
+    color: #f2f1ee;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #f2f1ee;
+}
+
+#aboutmobile {
+    top: 23vh;
+}
+
+#workmobile {
+    top: 35vh;
+}
+
+#teammobile {
+    top: 47vh;
+}
+
+#contactmobile {
+    top: 59vh;
+}
+
+
+@media only screen and (max-width: 1500px) {
+
+.about {
+    letter-spacing: -.065em;
+    font-size: 200px;
+    line-height: 200px;
+    top: 15vh;
+ }
+
+.nav {
+    height: 32px;
+}
+
+#about {
+    width: 85px;
+}
+
+#work {
+    width: 70px;
+}
+
+#team {
+    width: 70px;
+}
+
+#contact {
+    width: 120px;
+}
+
+.logo2 {
+    width: 142px;
+    height: 32px;
+}
+
+.biglist {
+    font-size: 200px;
+    line-height: 200px;
+    top: 15vh;
+}
+
+.clientphoto {
+    width: 380px;
+    height: 380px;
+}
+
+#judyimg1 {
+    bottom: 30vh;
+}
+
+#judyimg2 {
+    bottom: 35vh;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+
+.clientphoto {
+    width: 350px;
+    height: 350px;
+}
+
+}
+
+
+@media only screen and (max-width: 1030px) {
+
+.biglist {
+    font-size: 180px;
+    line-height: 180px;
+    top: 15vh;
+}
+
+.clientphoto {
+    width: 280px;
+    height: 280px;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.nav {
+    display: none;
+}
+
+#nav-icon3 span {
+  display: block;
+
+}
+
+.logo2 {
+    width: 190px;
+    height: 40px;
+    margin-top: 13px;
+}
+
+.about {
+    font-size: 70px;
+    line-height: 72px;
+    padding: 0;
+    top: 15vh;
+    width: 90vw;
+    text-align: center;
+
+}
+
+ul.smalllist {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+}
+
+.services {
+    margin: auto;
+    width: 50vw;
+    margin-top: 27vh;
+    padding-bottom: 20vh;
+}
+
+.biglist {
+    font-size: 75px;
+    line-height: 75px;
+    width: 90vw;
+    top: 10vh;
+}
+
+}

@@ -1,0 +1,494 @@
+body {
+    margin: 0;
+    height:100vh;
+    width:100%;
+    background-color: #f2f1ee;
+}
+
+@font-face {
+  font-family: FoundersGroteskMonoMedium;
+  src: url(fonts/founders-grotesk-mono-web-medium.woff);
+}
+
+@font-face {
+  font-family: FoundersGroteskMonoRegular;
+  src: url(fonts/founders-grotesk-mono-web-regular.woff);
+}
+
+.header2 {
+    width:100%;
+    height:85px;
+    position:fixed;
+    background-color: #f2f1ee;
+    background: linear-gradient(#f2f1ee, 85%, rgba(255, 255, 255, 0));
+    z-index: 2;
+}
+.logo2 {
+    background: url("images/utendahl.png") no-repeat;
+    background-size: 100%;
+    width: 190px;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.biglist {
+    color: #140b06;
+    position: relative;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 600;
+    letter-spacing: -.065em;
+    text-align: center;
+    font-size: 250px;
+    line-height: 250px;
+    width: 55vw;
+    padding: 0;
+    top: 10vh;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+.bigitem {
+/*  height: 250px;*/
+/*  display: inline-block;*/
+
+}
+
+.bigitem:hover {
+    font-style: italic;
+    text-decoration: line-through;
+    webkit-transition: all 300ms ease;
+    moz-transition: all 300ms ease;
+    ms-transition: all 300ms ease;
+    o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+
+
+#allisontxt {
+
+  
+}
+
+.teamphoto {
+    width: 470px;
+    height: 470px;
+}
+
+
+#madisonimg {
+    background: url("images/madison.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 40vh;
+    right: 2vw;
+    background-size: 100%;
+}
+
+
+#allisonimg {
+    background: url("images/allison.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 30vh;
+    left: 3vw;
+    background-size: 100%;
+}
+
+#zoeimg {
+    background: url("images/zoe.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 12vh;
+    right: 7vw;
+    background-size: 100%;
+}
+
+#toriimg {
+    background: url("images/tori.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 25vh;
+    left: 7vw;
+    background-size: 100%;
+}
+
+#graceimg {
+    background: url("images/grace.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 40vh;
+    right: 3vw;
+    background-size: 100%;
+}
+
+#gillianimg {
+    background: url("images/gillian.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 35vh;
+    left: 2vw;
+    background-size: 100%;
+}
+
+#hawaimg {
+    background: url("images/hawa.png") no-repeat;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    bottom: 20vh;
+    right: 7vw;
+    background-size: 100%;
+}
+
+
+.nav {
+    position: fixed;
+    font-family: FoundersGroteskMonoMedium;
+    font-size: 30px;
+    color: #140b06;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #140b06;
+    text-decoration: none;
+    z-index: 4;
+
+}
+
+#about {
+    top: 12px;
+    left: 20px;
+}
+
+.nav:hover {
+    color: #f2f1ee;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #140b06;
+}
+
+#work {
+    top: 12px;
+    right: 20px;
+}
+
+#team {
+    bottom: 12px;
+    left: 20px;
+}
+
+#contact {
+    bottom: 12px;
+    right: 20px;
+}
+
+#nav-icon3 span {
+  display: none;
+  position: fixed;
+  height: 2px;
+  width: 40px;
+  background: #140b06;
+  opacity: 1;
+  z-index: 5;
+  right: 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 20px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 32px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 44px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 32px;
+  width: 0%;
+  right: 40px;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 32px;
+  width: 0%;
+  right: 40px;
+}
+
+.mobilemenu {
+    position: fixed;
+    background-color: #f2f1ee;
+    display: none;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: 4;
+
+}
+
+.mobilenav {
+    position: fixed;
+    z-index: 5;
+    margin-bottom: 50px;
+    left: 50%; 
+    -webkit-transform: translate(-50%, 0); 
+    font-family: FoundersGroteskMonoMedium;
+    text-decoration: none;
+    font-size: 50px;
+    color: #140b06;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #140b06;
+}
+
+#aboutmobile {
+    top: 23vh;
+}
+
+#workmobile {
+    top: 35vh;
+}
+
+#teammobile {
+    top: 47vh;
+}
+
+#contactmobile {
+    top: 59vh;
+}
+
+.mobilelist {
+    display: none;
+    position: relative;
+}
+
+.collapsible {
+  background-color: #f2f1ee;
+  color: #140b06;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+    background-color: rgba(247,242,239,0);
+}
+
+button { 
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 600;
+    font-size: 75px;
+    height: 75px;
+    letter-spacing: -.065em;
+ }
+
+/*.active, .collapsible:hover {
+    font-style: italic;
+    text-decoration: line-through;
+}*/
+
+
+.content {
+  display: none;
+  overflow: hidden;
+    height: 315px;
+    width: 315px;
+}
+
+#madisonimgmobile {
+    background: url("images/madison.png") no-repeat;
+    background-size: 100%;
+    margin-left: 14vw;
+    margin-bottom: -25px;
+    margin-top: 15px;
+}
+
+#allisonimgmobile {
+    background: url("images/allison.png") no-repeat;
+    background-size: 100%;
+    margin-left: 2vw;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+#zoeimgmobile {
+    background: url("images/zoe.png") no-repeat;
+    background-size: 100%;
+    margin-left: 14vw;
+    margin-bottom: -25px;
+    margin-top: 15px;
+}
+
+#toriimgmobile {
+    background: url("images/tori.png") no-repeat;
+    background-size: 100%;
+    margin-left: 2vw;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+#graceimgmobile {
+    background: url("images/grace.png") no-repeat;
+    background-size: 100%;
+    margin-left: 14vw;
+    margin-bottom: -25px;
+    margin-top: 15px;
+}
+
+#gillianimgmobile {
+    background: url("images/gillian.png") no-repeat;
+    background-size: 100%;
+    margin-left: 2vw;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+#hawaimgmobile {
+    background: url("images/hawa.png") no-repeat;
+    background-size: 100%;
+    margin-left: 14vw;
+    margin-bottom: -25px;
+    margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 1500px) {
+
+
+.nav {
+    height: 32px;
+}
+
+#about {
+    width: 85px;
+}
+
+#work {
+    width: 70px;
+}
+
+#team {
+    width: 70px;
+}
+
+#contact {
+    width: 120px;
+}
+
+.logo2 {
+    width: 142px;
+    height: 32px;
+}
+
+.biglist {
+    font-size: 200px;
+    line-height: 200px;
+    top: 15vh;
+}
+
+.teamphoto {
+    width: 410px;
+    height: 410px;
+}
+
+#madisonimg {
+    bottom: 35vh;
+}
+
+#graceimg {
+    bottom: 35vh;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1150px) {
+
+.teamphoto {
+    width: 390px;
+    height: 390px;
+}
+
+}
+
+
+@media only screen and (max-width: 1030px) {
+
+.biglist {
+    font-size: 180px;
+    line-height: 180px;
+    top: 15vh;
+}
+
+.teamphoto {
+    width: 300px;
+    height: 300px;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.nav {
+    display: none;
+}
+
+#nav-icon3 span {
+  display: block;
+
+}
+
+.logo2 {
+    width: 190px;
+    height: 40px;
+    margin-top: 13px;
+}
+
+
+.biglist {
+
+    font-size: 75px;
+    line-height: 75px;
+    width: 75vw;
+    top: 15vh;
+    display: none;
+}
+
+.mobilelist {
+    display: block;
+    top: 15vh;
+}
+
+}
+
